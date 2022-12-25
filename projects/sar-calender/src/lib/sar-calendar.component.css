@@ -1,0 +1,154 @@
+.calender {
+
+   
+    height: 200px;
+    background: #FFFFFF;
+    box-shadow: 0px 2px 4px #BDBDBD;
+    border-radius: 10px;
+  
+  }
+  
+  /* .mount {
+    float: left;
+    margin: 2% 22px 1% 22px;
+    cursor: pointer;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 19px;
+  
+    color: #BDBDBD;
+  
+  }
+  
+  .mount:hover {
+    float: left;
+    padding: 2% 3% 1% 3%;
+    cursor: pointer;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 19px;
+  } */
+  
+  .mount{
+    cursor: pointer;
+  }
+
+  .mount:hover {
+    font-size: 16px;
+    color: #000000;
+    font-weight: bold;
+    cursor: pointer;
+
+  } 
+  
+  .mountActive {
+    font-size: 16px;
+    color: #000000;
+    font-weight: bold;
+  
+  
+  }
+  
+  .mountDays {
+    overflow-y: scroll;
+    overflow-y: hidden;
+    height: auto;
+    white-space: nowrap;
+    padding: 0px;
+    vertical-align: middle;
+    display: flex;
+    flex-wrap: nowrap;
+    overflow: auto;
+    padding-bottom: 30px;
+  }
+  
+  
+  .day {
+    padding: 2% 4%;
+    cursor: pointer;
+    font-style: normal;
+    font-size: 14px;
+    color: #000000;
+    width: 35px;
+    display: inline-block;
+    vertical-align: middle;
+    height: 96px;
+    margin-right: -4px;
+    flex: 0 0 auto;
+    text-align: center;
+  
+  }
+  .day div{
+  
+    
+    border-radius: 100%; 
+      padding: 2px;
+      background-color: #F2F2F2;
+      width: 28px;
+      height: 28px;
+  text-align: center;
+  
+  }
+    
+  
+  
+  .dayActive {
+    background-color: #1EE18D !important;
+  }
+  
+  
+  .calender ::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+    border-radius: 30px;
+    text-align: center;
+   
+   top: 0;
+   right: 30px;
+  
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: rgb(218, 218, 218);
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgb(218, 218, 218);
+  }
+  
+  
+  
+  /* test için yazıldı */
+  /* .container {
+      margin: 5px;
+      width: 350px;
+      height: 100px;
+      border: 2px solid #341C09;
+      white-space: nowrap;
+      vertical-align: middle;
+      overflow-x: scroll; 
+      display: flex;
+      flex-wrap: nowrap; 
+      overflow: auto;
+    }
+    .item {
+      border: 2px solid #B85B14;
+      background-color: #FC7307;
+      width: 120px;
+      display: inline-block;
+      vertical-align: middle;
+      height: 96px;
+      margin-right: -4px;
+      flex: 0 0 auto;
+  
+    } */
+  
