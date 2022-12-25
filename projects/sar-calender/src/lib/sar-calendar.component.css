@@ -5,9 +5,23 @@
     background: #FFFFFF;
     box-shadow: 0px 2px 4px #BDBDBD;
     border-radius: 10px;
+    max-width: 1200px;
   
   }
+
   
+  .mountHeader{
+
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: calc(-1 * var(--bs-gutter-y));
+    margin-right: calc(-.5 * var(--bs-gutter-x));
+    margin-left: calc(-.5 * var(--bs-gutter-x));
+    padding: 20px;
+  }
+
   /* .mount {
     float: left;
     margin: 2% 22px 1% 22px;
@@ -31,8 +45,12 @@
     line-height: 19px;
   } */
   
+  
   .mount{
     cursor: pointer;
+      flex: 0 0 auto;
+      width: 8.33333333%;
+  
   }
 
   .mount:hover {
@@ -40,6 +58,8 @@
     color: #000000;
     font-weight: bold;
     cursor: pointer;
+    flex: 0 0 auto;
+    width: 8.33333333%;
 
   } 
   

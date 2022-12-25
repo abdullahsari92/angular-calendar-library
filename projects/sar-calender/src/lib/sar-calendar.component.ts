@@ -56,53 +56,30 @@ export class SarCalendarComponent implements OnInit {
 
     }
   
-    tarih: any
-    dateGunler() {
-  
-      var ta = new Date(2021, 8, 31);
-  
-      this.tarih = ta.getDate();
-  
-  
-      console.log('this.tarih', this.tarih);
-      console.log('gün', this.datepipe.transform(ta, "E"));
-  
-  
-    }
   
     gunler: any[] = [];  
     days: any[] = [];
     getDays(mount: number) {
   
       this.days = [];
-      var gunSayisi = new Date(2021, mount, 0).getDate();// bir ayın içinde kaç gün olduğunu buluyor
+      var currentYear = new Date().getFullYear();
+
+      var gunSayisi = new Date(currentYear, mount, 0).getDate();// bir ayın içinde kaç gün olduğunu buluyor
   
       this.activeMount=mount;
       for (let i = 1; i <= gunSayisi; i++) {
   
-        //var ta = new Date(2021, mount, i);
   
-        var ta =mount.toString()+"/"+i.toString()+ "/2021";
+        var ta =mount.toString()+"/"+i.toString()+ "/" +currentYear;
         
-        let gunAdi= this.datepipe.transform(ta, "E");
-  
-        //console.log(" gunSayisi :" +i +" : ay :" +mount , gunAdi ); 
-  
+        let gunAdi= this.datepipe.transform(ta, "E");   
   
         var day ={dayNumber:i ,dayName:gunAdi};
   
-        this.days.push(day);
+        this.days.push(day);     
   
-     
+      } 
   
-      }
-  
-  
-      var tas = new Date("08/31/2021");
-  
-  
-      let gunAdi= this.datepipe.transform(tas, "E");
-      console.log('gunAdi',gunAdi)
     }
   
   
@@ -139,9 +116,7 @@ export class SarCalendarComponent implements OnInit {
         let tire2= day<10?"-0":"-";
 
         var tarih = this.activeYear + tire1 + this.activeMount + tire2 +day;
-
      this.startDate.emit(tarih);
-   console.log('tarih',tarih)
   
     }
 }

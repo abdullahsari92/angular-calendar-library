@@ -7,8 +7,8 @@
                 <span (click)="getDays(i+1)" >{{harf}}</span>
              </div>
         </div> -->
-        <div class="row" style="padding: 20px;">
-            <div *ngFor="let ay of aylar let i=index" class="col-lg-1 mount" [class.mountActive]="this.activeMount ==i+1"> 
+        <div class="mountHeader">
+            <div *ngFor="let ay of aylar let i=index" class="mount" [class.mountActive]="this.activeMount ==i+1"> 
                 <span (click)="getDays(i+1)" >{{(ay )?.substring(0,3)}}</span>
              </div>
         </div>
