@@ -24,4 +24,11 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 
 ## Further help
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+<div align="center">
+
+ <img src="https://raw.githubusercontent.com/abdullahsari92/angular-calendar-library/main/sar-calendar-use/src/assets/tasarim/calendar.png" alt="Logo" width="1200" height="600">
+
+# sar-calendar
+
+
+</div>
